@@ -212,7 +212,8 @@ main {
 .features {
     width: 100%;
     max-width: var(--max-width);
-    margin: 0 auto 100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
 
     h2 {
         text-align: center;
@@ -259,12 +260,13 @@ main {
             }
 
             article {
+                position: relative;
                 width: 400px;
                 height: 400px;
                 padding: 70px;
                 border-radius: 50px;
                 background: var(--decore-bg-color-pink);
-                display: flex; 
+                display: flex;
                 flex-direction: column;
 
                 h4 {
@@ -283,27 +285,72 @@ main {
                     font-weight: 400;
                     line-height: 25.6px;
                     color: inherit;
-                    margin :0;
+                    margin: 0;
                     text-align: left;
                 }
-                a{
+
+                a {
                     margin-top: auto;
-                    padding :5px;
-                    cursor : pointer;
+                    padding: 5px;
+                    cursor: pointer;
                     user-select: none;
                     text-decoration: none;
-                    color : #212353;
+                    color: #212353;
                     transition: var(--transition);
                 }
             }
 
-            &:nth-child(1),
-            &:nth-child(4) {
+            &:nth-child(1) {
                 article {
                     background: var(--decore-bg-color-blue);
+
+                    svg {
+                        position: absolute;
+                        top: 20px;
+                        right: 50px;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                article {
+                    background: var(--decore-bg-color-pink);
+
+                    svg {
+                        position: absolute;
+                        bottom: 20px;
+                        right: 20px;
+                    }
                 }
 
             }
+
+            &:nth-child(3) {
+                article {
+                    background: var(--decore-bg-color-pink);
+
+                    svg {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+
+            }
+
+            &:nth-child(4) {
+                article {
+                    background: var(--decore-bg-color-blue);
+
+                    svg {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+
+            }
+
         }
     }
 }
