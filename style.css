@@ -1,6 +1,5 @@
 :root {
     --font-size: 18px;
-    --padding: 20px;
 
     --bg-color: #ffffff;
     --max-width: 1140px;
@@ -32,7 +31,7 @@ body {
 }
 
 button {
-    padding :16px;
+    padding: 16px;
     min-width: 210px;
     height: 60px;
     border-radius: 50px;
@@ -62,7 +61,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--padding) 0;
+    padding: 20px 0;
     gap: 20px;
     margin-bottom: 100px;
 
@@ -126,8 +125,9 @@ main {
 }
 
 .banner {
-    padding: var(--padding) 0;
+    padding: 20px 0;
     position: relative;
+    margin-bottom: 100px;
 
     h1 {
         font-family: Work Sans;
@@ -152,22 +152,57 @@ main {
     }
 
     button {
-        background:  var(--button-color-pink);
+        background: var(--button-color-pink);
         border: 1px solid var(--button-color-pink);
         color: var(--button-color-white);
         justify-content: center;
-
 
         &:hover {
             background: #EB4BAB;
         }
     }
 
-
     img {
         position: absolute;
         right: 0;
         bottom: 0;
         z-index: -1;
+    }
+}
+
+.we-are {
+    padding: 70px;
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--decore-bg-color-pink);
+    border-radius: 50px;
+    gap: 20px;
+
+    figure {
+        max-width: 400px;
+
+    }
+
+    article {
+        max-width: 500px;
+        h4 {
+            font-family: Work Sans;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 52px;
+            color: var(--tite-color);
+            margin-bottom: 40px;
+        }
+        p {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28.8px;
+            color: inherit;
+        }
     }
 }
