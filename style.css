@@ -189,6 +189,7 @@ main {
 
     article {
         max-width: 500px;
+
         h4 {
             font-family: Work Sans;
             font-size: 40px;
@@ -197,12 +198,112 @@ main {
             color: var(--tite-color);
             margin-bottom: 40px;
         }
+
         p {
             font-family: Montserrat;
             font-size: 18px;
             font-weight: 500;
             line-height: 28.8px;
             color: inherit;
+        }
+    }
+}
+
+.features {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto 100px;
+
+    h2 {
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 52px;
+        color: var(--tite-color);
+        margin-bottom: 50px;
+    }
+
+    p {
+        max-width: 640px;
+        text-align: center;
+        margin: 0 auto;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28.8px;
+        margin-bottom: 80px;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            position: relative;
+            width: 50%;
+            min-width: 570px;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-bottom: 50px;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+
+            article {
+                width: 400px;
+                height: 400px;
+                padding: 70px;
+                border-radius: 50px;
+                background: var(--decore-bg-color-pink);
+                display: flex; 
+                flex-direction: column;
+
+                h4 {
+                    font-family: Work Sans;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 31.2px;
+                    color: var(--tite-color);
+                    white-space: nowrap;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25.6px;
+                    color: inherit;
+                    margin :0;
+                    text-align: left;
+                }
+                a{
+                    margin-top: auto;
+                    padding :5px;
+                    cursor : pointer;
+                    user-select: none;
+                    text-decoration: none;
+                    color : #212353;
+                    transition: var(--transition);
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(4) {
+                article {
+                    background: var(--decore-bg-color-blue);
+                }
+
+            }
         }
     }
 }
